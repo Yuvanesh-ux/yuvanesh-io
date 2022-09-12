@@ -1,0 +1,408 @@
+html {
+  background-color: #232629;
+  scroll: smooth;
+}
+
+/* Bounce To Right */
+.hvr-bounce-to-right {
+  border-radius: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 01);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-right:before {
+  border-radius: 25px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+  border-radius: 25px;
+  color: white;
+}
+.hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+  border-radius: 25px;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.App-header {
+  display:flex;
+  flex-direction: row;
+}
+
+.App-navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+}
+
+.App-navbar-logo{
+  width: 10vw;
+}
+
+.App-navbar-navs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.App-navbar-navs-item {
+  width: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+
+  .App-navbar {
+    justify-content: center;
+
+
+  }
+  .App-navbar-navs {
+    width: auto;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+}
+
+.App-content {
+  display:flex;
+  flex-direction: row;
+  height: 70vh;
+  padding-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-content-bg {
+  width: auto;
+  height: auto;
+  margin-bottom: 500px;
+}
+
+.App-content-bg-img {
+  z-index: -1;
+  position: absolute;
+  margin-left: 4vw;
+  width: 600px;
+  height: auto;
+}
+
+.App-content-titlecard {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  padding-left: 30vw;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.App-content-titlecard-intro {
+  text-align: left;
+  width: auto;
+  font-size: 25px;
+  color: #FFFFFF
+}
+
+.App-content-titlecard-name {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #E9AD52
+}
+
+.App-content-titlecard-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-right: 180px;
+  justify-content: right;
+}
+
+.icon {
+  font-size: 40px;
+  color: #fff;
+}
+
+@media screen and (max-width: 920px) {
+  .App-content {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .App-content-bg {
+    margin-right: 350px;
+    margin-bottom: 22vh;
+  }
+
+  .App-content-bg-img {
+    margin: none;
+    width: 300px;
+
+  }
+
+  .App-content-titlecard {
+    padding-left: 0vw;
+    margin: 0px;
+    width: auto;
+  }
+
+  .App-content-titlecard-intro {
+    display: none;
+  }
+
+  .App-content-titlecard-name {
+    font-size: 20px;
+    margin-top: 0px;
+    color: #232629;
+  }
+
+  .App-content-titlecard-socials {
+    padding-right: 50px;
+    font-size: 12px;
+  }
+
+  .icon {
+    font-size: 20px;
+    color: #232629;
+  }
+}
+
+.App-experience {
+  height: auto;
+  background-color: #1a1c1f;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+.App-experience-title {
+  margin-left: 50px;
+  color: #E9AD52;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.App-experience-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.App-experience-nomic {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding-left: 50px;
+  margin-top: 100px;
+}
+
+.App-experience-nomic-logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.App-experience-nomic-infocard {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  color: #fff;
+}
+
+.App-experience-nomic-bar-img {
+  padding-top: 8px;
+  padding-right: 5px;
+  height: 222px;
+  width: auto;
+}
+
+.App-experience-nomic-info-swe {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.App-experience-nomic-swe-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #E9AD52
+}
+
+.App-experience-nomic-intern {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.App-experience-nomic-intern-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #E9AD52
+}
+
+.App-experience-nomic-intern-description {
+  margin-top: 10px;
+}
+
+.App-experience-skill {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding-left: 50px;
+  margin-top: 100px;
+}
+
+.App-experience-skill-logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.App-experience-skill-item-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-left: 50px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.App-experience-skill-item {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.App-experience-skill-item div {
+  margin: 0px;
+  margin-right: 0px;
+  width: 10px;
+}
+
+@media screen and (max-width: 920px) {
+  .App-experience-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .App-experience-nomic {
+    padding-left: 0px;
+    width: 70vw;
+  }
+
+  .App-experience-skill {
+    padding-left: 0px;
+    width: 70vw;
+  }
+
+  .App-experience-nomic-bar {
+    display: none;
+  }
+
+  .App-experience-skill-item-container {
+    padding-left: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .App-experience-skill-item {
+    width: 100px;
+  }
+}
+
+.App-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.App-projects-container {
+  width: 38vw;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.App-projects-container-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #E9AD52
+}
+
+.App-projects-projectcards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.App-projects-projectcards-card {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 25px;
+}
+
+.App-projects-contact {
+  width: 50vw;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.App-projects-contact-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #E9AD52
+}
+
+.App-projects-contact-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #fff;
+  font-size: 18px;
+}
+
+

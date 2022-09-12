@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.421c2738.css",
+    "main.js": "/static/js/main.f1b99bcc.js",
+    "static/js/787.87206708.chunk.js": "/static/js/787.87206708.chunk.js",
+    "static/media/polaroid.png": "/static/media/polaroid.1312858ca2e022baae78.png",
+    "static/media/skills.png": "/static/media/skills.5b6b0b0d8b28f2275638.png",
+    "static/media/bar.png": "/static/media/bar.4a26449744adad9e42fc.png",
+    "static/media/logo.png": "/static/media/logo.b7f2a3defad8856ec450.png",
+    "index.html": "/index.html",
+    "main.421c2738.css.map": "/static/css/main.421c2738.css.map",
+    "main.f1b99bcc.js.map": "/static/js/main.f1b99bcc.js.map",
+    "787.87206708.chunk.js.map": "/static/js/787.87206708.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.421c2738.css",
+    "static/js/main.f1b99bcc.js"
+  ]
+}
