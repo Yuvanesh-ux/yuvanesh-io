@@ -2,4 +2,7 @@
 
 ## This is the source code for the (yuvanesh.io)[yuvanesh.io] portfolio page
 
-## Feel free to look around and stuff
+## This website was created with React.js
+
+### Feel free to look around for how its been implemented
+
