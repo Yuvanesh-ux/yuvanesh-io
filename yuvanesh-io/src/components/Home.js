@@ -60,7 +60,7 @@ export function Home() {
               <h2 className='nav-link-label'>Home</h2>
               <img className='nav-link-image' src={home}/>
             </a>
-            <a className='nav-link' href="#">
+            <a className='nav-link' href="/experience">
               <h2 className='nav-link-label'>Experience</h2>
               <img className='nav-link-image' src={experience}/>
             </a>
